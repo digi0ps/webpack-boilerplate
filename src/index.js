@@ -1,5 +1,5 @@
 import lodash from "lodash";
-import "./index.css";
+import styles from "./index.css";
 import Picture from "../images/image.png";
 
 const addComponent = component => document.body.appendChild(component);
@@ -7,7 +7,7 @@ const addComponent = component => document.body.appendChild(component);
 const textComponent = text => {
   const element = document.createElement("div");
   element.innerHTML = lodash.join(text, " ");
-  element.classList.add("hello");
+  element.classList.add(styles.hello);
   addComponent(element);
 };
 
@@ -19,3 +19,6 @@ const imageComponent = image => {
 
 textComponent(["Hello", "World"]);
 imageComponent(Picture);
+
+console.log(styles);
+console.log(duplicate);
