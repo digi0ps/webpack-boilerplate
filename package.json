@@ -7,7 +7,8 @@
     "start": "serve -s build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
-    "watch": "webpack --watch --config webpack.config.js"
+    "watch": "webpack --watch --config webpack.config.js",
+    "typescript": "webpack --config typescript/webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,8 @@
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.4",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.1.2"
   },
